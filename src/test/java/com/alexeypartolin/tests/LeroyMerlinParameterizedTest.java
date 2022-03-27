@@ -1,6 +1,7 @@
 package com.alexeypartolin.tests;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -54,6 +55,19 @@ public class LeroyMerlinParameterizedTest extends TestBase {
         $(".auth form").shouldHave(text(validationMessage));
     }
 
+    @Test
+    void printFirstTextTest() {
+        System.out.println("test1");
+    }
 
+    @Test
+    void printSecondTextTest() {
+        System.out.println("test2");
+    }
+
+    @Test
+    void printThirdTextTest() {
+        System.out.println("test3");
+    }
 
 }
